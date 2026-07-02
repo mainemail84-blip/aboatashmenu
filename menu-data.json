@@ -1,34 +1,10 @@
 [
   {
-    "id": 1,
-    "name": "اسپرسو",
-    "category": "coffee",
-    "price": "۹۵",
-    "desc": "قهوه غلیظ و قوی",
+    "id": 1783030209574,
+    "name": "میکس جویس",
+    "price": "150000",
+    "category": "ترکیبی",
+    "desc": "",
     "emoji": "☕"
-  },
-  {
-    "id": 2,
-    "name": "کاپوچینو",
-    "category": "coffee",
-    "price": "۱۳۵",
-    "desc": "با فوم شیر",
-    "emoji": "☕"
-  },
-  {
-    "id": 3,
-    "name": "لاته زعفرانی",
-    "category": "coffee",
-    "price": "۱۵۵",
-    "desc": "طعم اصیل ایرانی",
-    "emoji": "🥛"
-  },
-  {
-    "id": 4,
-    "name": "کراسان پسته",
-    "category": "pastry",
-    "price": "۱۲۰",
-    "desc": "تازه و ترد",
-    "emoji": "🥐"
   }
 ]
