@@ -3,81 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>پنل مدیریت - Lumina Café</title>
+  <title>پنل مدیریت پیشرفته - Lumina Café</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body class="bg-zinc-950 text-white">
   <div class="max-w-2xl mx-auto p-6">
 
-    <div class="flex items-center justify-between mb-8">
-      <h1 class="text-3xl font-bold flex items-center gap-3">
-        <i class="fa-solid fa-mug-hot text-amber-500"></i>
-        پنل مدیریت
-      </h1>
-      <a href="index.html" class="text-amber-400 hover:underline">← دیدن منو مشتری</a>
+    <div class="flex justify-between items-center mb-8">
+      <h1 class="text-3xl font-bold">پنل مدیریت Lumina Café</h1>
+      <a href="index.html" class="text-amber-400 flex items-center gap-2 hover:underline">
+        <i class="fa-solid fa-eye"></i> دیدن منو
+      </a>
     </div>
 
-    <!-- Form -->
+    <div class="flex gap-3 mb-6">
+      <button onclick="downloadJSON()" class="flex-1 bg-amber-600 hover:bg-amber-700 py-3 rounded-2xl font-medium">
+        <i class="fa-solid fa-download"></i> دانلود JSON
+      </button>
+      <label class="flex-1 bg-zinc-800 hover:bg-zinc-700 py-3 rounded-2xl font-medium text-center cursor-pointer">
+        <i class="fa-solid fa-upload"></i> بارگذاری JSON
+        <input type="file" id="fileInput" accept=".json" class="hidden" onchange="loadJSONFile(event)">
+      </label>
+    </div>
+
+    <!-- Add/Edit Form -->
     <div class="bg-zinc-900 rounded-3xl p-6 mb-8">
-      <h2 class="text-xl font-semibold mb-4">افزودن / ویرایش آیتم</h2>
-      <form id="itemForm">
+      <h2 class="text-xl mb-4 font-semibold">افزودن یا ویرایش آیتم</h2>
+      <form id="itemForm" class="grid grid-cols-1 gap-4">
         <input type="hidden" id="editId">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <input id="name" type="text" placeholder="نام آیتم" required class="bg-zinc-800 p-4 rounded-2xl">
-          <input id="price" type="text" placeholder="قیمت (هزار تومان)" required class="bg-zinc-800 p-4 rounded-2xl">
-          <input id="category" type="text" placeholder="دسته (coffee / tea / pastry / breakfast)" required class="bg-zinc-800 p-4 rounded-2xl">
-          <input id="emoji" type="text" placeholder="ایموجی یا لینک عکس" class="bg-zinc-800 p-4 rounded-2xl">
-          <input id="desc" type="text" placeholder="توضیح کوتاه" class="bg-zinc-800 p-4 rounded-2xl col-span-2">
+        <input id="name" placeholder="نام آیتم" class="bg-zinc-800 p-4 rounded-2xl" required>
+        <div class="grid grid-cols-2 gap-4">
+          <input id="price" placeholder="قیمت (هزار تومان)" class="bg-zinc-800 p-4 rounded-2xl" required>
+          <input id="category" placeholder="دسته (coffee, tea,...)" class="bg-zinc-800 p-4 rounded-2xl" required>
         </div>
-        <button type="submit" class="mt-6 w-full bg-green-600 hover:bg-green-700 py-4 rounded-3xl font-medium text-lg">
+        <input id="desc" placeholder="توضیح کوتاه" class="bg-zinc-800 p-4 rounded-2xl">
+        <input id="emoji" placeholder="ایموجی یا لینک عکس" class="bg-zinc-800 p-4 rounded-2xl">
+        <button type="submit" class="mt-2 bg-green-600 hover:bg-green-700 py-4 rounded-3xl font-medium">
           ذخیره آیتم
         </button>
       </form>
     </div>
 
-    <!-- Items List -->
-    <h2 class="text-xl font-semibold mb-4">آیتم‌های فعلی</h2>
+    <!-- List -->
+    <h2 class="text-xl font-semibold mb-4">آیتم‌های منو</h2>
     <div id="adminList" class="space-y-3"></div>
   </div>
 
   <script>
     let menuItems = [];
 
-    async function loadData() {
+    async function loadInitialData() {
       try {
         const res = await fetch('menu-data.json');
         menuItems = await res.json();
-        renderAdminList();
       } catch (e) {
-        alert("فایل menu-data.json پیدا نشد!");
+        menuItems = [];
       }
+      renderList();
     }
 
-    function renderAdminList() {
+    function renderList() {
       const container = document.getElementById('adminList');
       container.innerHTML = menuItems.map(item => `
-        <div class="bg-zinc-900 rounded-3xl p-5 flex justify-between items-center">
+        <div class="bg-zinc-900 rounded-3xl p-5 flex justify-between items-center group">
           <div>
-            <div class="font-bold">${item.name}</div>
-            <div class="text-sm text-zinc-400">${item.desc} • ${item.price} هزار تومان</div>
+            <div class="font-bold text-lg">${item.name}</div>
+            <div class="text-zinc-400">${item.desc || ''} — ${item.price} هزار تومان</div>
           </div>
-          <div class="flex gap-3">
+          <div class="flex gap-4 opacity-70 group-hover:opacity-100">
             <button onclick="editItem(${item.id})" class="text-blue-400 hover:text-blue-300">
-              <i class="fa-solid fa-pen"></i>
+              ✏️
             </button>
             <button onclick="deleteItem(${item.id})" class="text-red-400 hover:text-red-300">
-              <i class="fa-solid fa-trash"></i>
+              🗑️
             </button>
           </div>
         </div>
       `).join('');
     }
 
-    document.getElementById('itemForm').addEventListener('submit', async (e) => {
+    document.getElementById('itemForm').addEventListener('submit', (e) => {
       e.preventDefault();
-
       const id = document.getElementById('editId').value;
+
       const newItem = {
         id: id ? Number(id) : Date.now(),
         name: document.getElementById('name').value,
@@ -88,15 +97,12 @@
       };
 
       if (id) {
-        menuItems = menuItems.map(item => item.id == id ? newItem : item);
+        menuItems = menuItems.map(i => i.id == id ? newItem : i);
       } else {
         menuItems.push(newItem);
       }
 
-      // ذخیره در فایل (در GitHub Pages این کار نیاز به backend دارد، فعلاً در مرورگر ذخیره می‌شود)
-      alert('آیتم ذخیره شد!\n\nبرای ذخیره دائمی، فایل menu-data.json را به صورت دستی به‌روزرسانی کنید.');
-      
-      renderAdminList();
+      renderList();
       e.target.reset();
       document.getElementById('editId').value = '';
     });
@@ -108,20 +114,47 @@
         document.getElementById('name').value = item.name;
         document.getElementById('price').value = item.price;
         document.getElementById('category').value = item.category;
-        document.getElementById('desc').value = item.desc;
-        document.getElementById('emoji').value = item.emoji;
+        document.getElementById('desc').value = item.desc || '';
+        document.getElementById('emoji').value = item.emoji || '';
       }
     }
 
     function deleteItem(id) {
-      if (confirm('آیا از حذف این آیتم مطمئن هستید؟')) {
-        menuItems = menuItems.filter(item => item.id !== id);
-        renderAdminList();
+      if (confirm('حذف شود؟')) {
+        menuItems = menuItems.filter(i => i.id !== id);
+        renderList();
       }
     }
 
-    // بارگذاری اولیه
-    loadData();
+    function downloadJSON() {
+      const dataStr = JSON.stringify(menuItems, null, 2);
+      const dataUri = 'data:application/json;charset=utf-8,'+ encodeURIComponent(dataStr);
+      const exportFileDefaultName = 'menu-data.json';
+
+      const linkElement = document.createElement('a');
+      linkElement.setAttribute('href', dataUri);
+      linkElement.setAttribute('download', exportFileDefaultName);
+      linkElement.click();
+    }
+
+    function loadJSONFile(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        try {
+          menuItems = JSON.parse(e.target.result);
+          renderList();
+          alert('فایل با موفقیت بارگذاری شد!');
+        } catch (err) {
+          alert('فایل معتبر نیست!');
+        }
+      };
+      reader.readAsText(file);
+    }
+
+    // Init
+    loadInitialData();
   </script>
 </body>
 </html>
