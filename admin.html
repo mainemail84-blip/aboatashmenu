@@ -29,7 +29,7 @@
         
         <div class="grid grid-cols-2 gap-4 mb-4">
           <input id="price" placeholder="قیمت" class="bg-zinc-800 p-4 rounded-2xl" required>
-          <input id="category" placeholder="دسته‌بندی" class="bg-zinc-800 p-4 rounded-2xl" required>
+          <input id="category" placeholder="دسته‌بندی (جدید یا موجود)" class="bg-zinc-800 p-4 rounded-2xl" required>
         </div>
 
         <input id="desc" placeholder="توضیح" class="w-full bg-zinc-800 p-4 rounded-2xl mb-6">
@@ -49,7 +49,7 @@
     <div id="status" class="text-center my-6"></div>
 
     <!-- لیست آیتم‌ها -->
-    <h2 class="text-xl font-semibold mb-4">آیتم‌ها</h2>
+    <h2 class="text-xl font-semibold mb-4">آیتم‌های فعلی</h2>
     <div id="adminList" class="space-y-4"></div>
   </div>
 
@@ -82,7 +82,6 @@
       status.innerHTML = "در حال آپلود...";
 
       let imagePath = null;
-
       if (selectedFile) {
         const fileName = Date.now() + '-' + selectedFile.name.replace(/\s+/g, '-').toLowerCase();
         imagePath = `images/${fileName}`;
@@ -118,11 +117,11 @@
 
       const saved = await saveMenuData(token);
       if (saved) {
-        status.innerHTML = `<span class="text-green-400">✅ آیتم ذخیره شد</span>`;
+        status.innerHTML = `<span class="text-green-400">✅ ذخیره شد</span>`;
         e.target.reset();
         selectedFile = null;
         document.getElementById('preview').classList.add('hidden');
-        loadData(); // بروزرسانی لیست
+        loadData();
       }
     });
 
@@ -134,18 +133,11 @@
           try {
             await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/images/${fileName}`, {
               method: 'PUT',
-              headers: {
-                Authorization: `token ${token}`,
-                "Content-Type": "application/json"
-              },
-              body: JSON.stringify({
-                message: `Add image ${fileName}`,
-                content: base64
-              })
+              headers: { Authorization: `token ${token}`, "Content-Type": "application/json" },
+              body: JSON.stringify({ message: `Add image`, content: base64 })
             });
             resolve(true);
           } catch (err) {
-            console.error(err);
             resolve(false);
           }
         };
@@ -179,7 +171,7 @@
       fetch(`menu-data.json?t=${Date.now()}`)
         .then(res => res.json())
         .then(data => {
-          menuItems = data;
+          menuItems = data || [];
           renderList();
         })
         .catch(() => {
@@ -199,7 +191,7 @@
             <div class="font-bold">${item.name}</div>
             <div class="text-sm text-zinc-400">${item.desc || ''}</div>
             <div class="text-amber-400">${item.price} هزار تومان</div>
-            <div class="text-xs text-zinc-500">دسته: ${item.category}</div>
+            <div class="text-xs text-zinc-500 mt-1">دسته: ${item.category}</div>
           </div>
           <div class="flex flex-col gap-2">
             <button onclick="editItem(${item.id})" class="text-blue-400">ویرایش</button>
@@ -221,13 +213,14 @@
     }
 
     function deleteItem(id) {
-      if (confirm('حذف شود؟')) {
+      if (confirm('این آیتم حذف شود؟')) {
         menuItems = menuItems.filter(i => i.id !== id);
         renderList();
+        const token = document.getElementById('githubToken').value.trim();
+        if (token) saveMenuData(token);
       }
     }
 
-    // بارگذاری اولیه
     loadData();
   </script>
 </body>
