@@ -10,5 +10,17 @@
     "popular": false,
     "image": "images/1783183405276-قهوه-اسپرسو-1.jpg",
     "emoji": "☕"
+  },
+  {
+    "id": 1783183633568,
+    "name": "چای",
+    "price": "-",
+    "category": "چای و دمنوش",
+    "desc": "",
+    "rating": null,
+    "discount": 0,
+    "popular": false,
+    "image": "images/1783183631538-images.jpeg",
+    "emoji": "☕"
   }
 ]
