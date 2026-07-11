@@ -718,5 +718,17 @@
     "popular": false,
     "image": "images/1783785495226-ماشروم.jpeg",
     "emoji": "☕"
+  },
+  {
+    "id": 1783785557609,
+    "name": "پیتزا چیکن",
+    "price": "-",
+    "category": "پیتزا",
+    "desc": "",
+    "rating": null,
+    "discount": 0,
+    "popular": false,
+    "image": "images/1783785555462-چیکن.jpeg",
+    "emoji": "☕"
   }
 ]
