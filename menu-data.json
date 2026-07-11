@@ -598,5 +598,17 @@
     "popular": false,
     "image": "images/1783782213926-شیکقهوه.jpeg",
     "emoji": "☕"
+  },
+  {
+    "id": 1783784743742,
+    "name": "شیک توت فرنگی",
+    "price": "-",
+    "category": "بستنی و شیک",
+    "desc": "",
+    "rating": null,
+    "discount": 0,
+    "popular": false,
+    "image": "images/1783784741591-milkshake-tootfarangi.jpg",
+    "emoji": "☕"
   }
 ]
