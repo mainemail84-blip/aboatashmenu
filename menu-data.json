@@ -574,5 +574,17 @@
     "popular": false,
     "image": "images/1783781411981-شیکموز.jpeg",
     "emoji": "☕"
+  },
+  {
+    "id": 1783782069327,
+    "name": "شیک قهوه",
+    "price": "-",
+    "category": "بستنی و شیک",
+    "desc": "",
+    "rating": null,
+    "discount": 0,
+    "popular": false,
+    "image": "images/1783782067151-شیکقهوه.jpeg",
+    "emoji": "☕"
   }
 ]
