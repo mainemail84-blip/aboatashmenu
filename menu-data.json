@@ -538,5 +538,17 @@
     "popular": false,
     "image": "images/1783781010239-شیک-شکلات.jpg",
     "emoji": "☕"
+  },
+  {
+    "id": 1783781187458,
+    "name": "شیک کیت کت",
+    "price": "-",
+    "category": "بستنی و شیک",
+    "desc": "",
+    "rating": null,
+    "discount": 0,
+    "popular": false,
+    "image": "images/1783781184807-کیت-کت.jpeg",
+    "emoji": "☕"
   }
 ]
