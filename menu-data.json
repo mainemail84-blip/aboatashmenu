@@ -202,5 +202,17 @@
     "popular": false,
     "image": "images/1783775293284-affogatocover.jpg",
     "emoji": "☕"
+  },
+  {
+    "id": 1783775526472,
+    "name": "شیر کاکائو",
+    "price": "-",
+    "category": "قهوه و نوشیدنی گرم",
+    "desc": "",
+    "rating": null,
+    "discount": 0,
+    "popular": false,
+    "image": "images/1783775524548-طرز-تهیه-شیر-کاکائو-خانگی.jpg",
+    "emoji": "☕"
   }
 ]
