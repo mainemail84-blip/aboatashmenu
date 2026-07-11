@@ -142,5 +142,17 @@
     "popular": false,
     "image": "images/1783774792841-americano-coffee-fenjoonet-site.jpg",
     "emoji": "☕"
+  },
+  {
+    "id": 1783774894651,
+    "name": "لته",
+    "price": "-",
+    "category": "قهوه و نوشیدنی گرم",
+    "desc": "",
+    "rating": null,
+    "discount": 0,
+    "popular": false,
+    "image": "images/1783774892447-late.jpeg",
+    "emoji": "☕"
   }
 ]
