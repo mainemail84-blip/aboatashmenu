@@ -838,5 +838,17 @@
     "popular": false,
     "image": "images/1783786750852-شکاری.jpeg",
     "emoji": "☕"
+  },
+  {
+    "id": 1783786853077,
+    "name": "پاستا آلفردو",
+    "price": "-",
+    "category": "پاستا",
+    "desc": "",
+    "rating": null,
+    "discount": 0,
+    "popular": false,
+    "image": "images/1783786850945-الفردوپاستا.jpeg",
+    "emoji": "☕"
   }
 ]
