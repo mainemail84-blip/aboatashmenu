@@ -924,15 +924,15 @@
     "emoji": "☕"
   },
   {
-    "id": 1783787777783,
-    "name": "سوسیس تخم مرغ",
+    "id": 1783788128651,
+    "name": "سینی ویژه",
     "price": "-",
-    "category": "صبحانه",
-    "desc": "",
-    "rating": null,
+    "category": "سینی",
+    "desc": "انواع سوخاری/ سالاد/ سیب زمینی/ پیتزا مینی/ دورچین",
+    "rating": 5,
     "discount": 0,
-    "popular": false,
-    "image": "images/1783787775234-سوسیس.jpeg",
+    "popular": true,
+    "image": null,
     "emoji": "☕"
   }
 ]
