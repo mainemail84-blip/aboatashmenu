@@ -814,5 +814,17 @@
     "popular": false,
     "image": "images/1783786548907-الفردسیب.jpeg",
     "emoji": "☕"
+  },
+  {
+    "id": 1783786670418,
+    "name": "سیب آلفردو",
+    "price": "-",
+    "category": "سیب زمینی",
+    "desc": "",
+    "rating": null,
+    "discount": 0,
+    "popular": false,
+    "image": "images/1783786668586-الیسیب.jpeg",
+    "emoji": "☕"
   }
 ]
