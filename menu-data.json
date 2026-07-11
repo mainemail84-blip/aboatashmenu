@@ -766,5 +766,17 @@
     "popular": false,
     "image": "images/1783785922756-سس-الفردو.jpeg",
     "emoji": "☕"
+  },
+  {
+    "id": 1783786077996,
+    "name": "نان سیر",
+    "price": "-",
+    "category": "پیتزا",
+    "desc": "",
+    "rating": null,
+    "discount": 0,
+    "popular": false,
+    "image": "images/1783786075197-نان-سیر.jpeg",
+    "emoji": "☕"
   }
 ]
