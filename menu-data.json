@@ -406,5 +406,17 @@
     "popular": false,
     "image": "images/1783779810084-نوتلا-گلاسه-1-e1646742876517.jpg",
     "emoji": "☕"
+  },
+  {
+    "id": 1783779914320,
+    "name": "موز گلاسه",
+    "price": "-",
+    "category": "بار سرد و نوشیدنی",
+    "desc": "",
+    "rating": null,
+    "discount": 0,
+    "popular": false,
+    "image": "images/1783779911360-موز-گلاسه.jpg",
+    "emoji": "☕"
   }
 ]
