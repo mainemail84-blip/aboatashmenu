@@ -178,5 +178,17 @@
     "popular": false,
     "image": "images/1783775054061-hot-chocolate1_11zon.jpg",
     "emoji": "☕"
+  },
+  {
+    "id": 1783775141232,
+    "name": "شیر قهوه",
+    "price": "-",
+    "category": "قهوه و نوشیدنی گرم",
+    "desc": "",
+    "rating": null,
+    "discount": 0,
+    "popular": false,
+    "image": "images/1783775138827--شیر-قهوه-3-jpg.webp",
+    "emoji": "☕"
   }
 ]
