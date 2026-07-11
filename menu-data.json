@@ -694,5 +694,17 @@
     "popular": false,
     "image": "images/1783785322449-طرز-تهیه-پیتزا-مخلوط.jpg",
     "emoji": "☕"
+  },
+  {
+    "id": 1783785423871,
+    "name": "پیتزا پپرونی",
+    "price": "-",
+    "category": "پیتزا",
+    "desc": "",
+    "rating": null,
+    "discount": 0,
+    "popular": false,
+    "image": "images/1783785421758-پپرونی.jpeg",
+    "emoji": "☕"
   }
 ]
