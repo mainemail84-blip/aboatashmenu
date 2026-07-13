@@ -509,9 +509,9 @@
     "price": "-",
     "category": "بار سرد و نوشیدنی",
     "desc": "",
-    "rating": null,
+    "rating": 4.7,
     "discount": 0,
-    "popular": false,
+    "popular": true,
     "image": "images/1783780778394-رد-موهیتو.jpg",
     "emoji": "☕"
   },
