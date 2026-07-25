@@ -649,7 +649,7 @@
   },
   {
     "id": 1785008940716,
-    "name": "ماشروم",
+    "name": "ماشروم تک نفره",
     "price": "330000",
     "category": "پیتزا",
     "desc": "",
@@ -663,18 +663,6 @@
     "id": 1785008962684,
     "name": "ماشروم دونفره",
     "price": "500000",
-    "category": "پیتزا",
-    "desc": "",
-    "rating": null,
-    "discount": 0,
-    "popular": false,
-    "image": null,
-    "emoji": "☕"
-  },
-  {
-    "id": 1785008987788,
-    "name": "چیکن تک نفره",
-    "price": "450000",
     "category": "پیتزا",
     "desc": "",
     "rating": null,
