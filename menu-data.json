@@ -84,18 +84,6 @@
     "emoji": "☕"
   },
   {
-    "id": 1783184419173,
-    "name": "نیمرو",
-    "price": "-",
-    "category": "صبحانه",
-    "desc": "",
-    "rating": null,
-    "discount": 0,
-    "popular": false,
-    "image": "images/1783184417095-nimro.jpeg",
-    "emoji": "☕"
-  },
-  {
     "id": 1783774344914,
     "name": "اسپرسو دبل",
     "price": "-",
@@ -777,18 +765,6 @@
     "discount": 0,
     "popular": false,
     "image": "images/1783787206312-2322.jpg",
-    "emoji": "☕"
-  },
-  {
-    "id": 1783787271888,
-    "name": "سالاد مرغ و گردو",
-    "price": "-",
-    "category": "سالاد",
-    "desc": "",
-    "rating": null,
-    "discount": 0,
-    "popular": false,
-    "image": "images/1783787269541-سالاد-مرغ-و-شوید.jpg",
     "emoji": "☕"
   }
 ]
