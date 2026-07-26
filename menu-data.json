@@ -802,5 +802,17 @@
     "popular": false,
     "image": null,
     "emoji": "☕"
+  },
+  {
+    "id": 1785055739977,
+    "name": "سزار",
+    "price": "350000",
+    "category": "سالاد",
+    "desc": "",
+    "rating": null,
+    "discount": 0,
+    "popular": false,
+    "image": null,
+    "emoji": "☕"
   }
 ]
