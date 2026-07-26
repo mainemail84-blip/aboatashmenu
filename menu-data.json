@@ -910,5 +910,17 @@
     "popular": false,
     "image": null,
     "emoji": "☕"
+  },
+  {
+    "id": 1785056356275,
+    "name": "سینی ویژه",
+    "price": "500000",
+    "category": "سینی ویژه",
+    "desc": "",
+    "rating": null,
+    "discount": 0,
+    "popular": false,
+    "image": null,
+    "emoji": "☕"
   }
 ]
