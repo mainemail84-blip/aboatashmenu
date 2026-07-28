@@ -994,5 +994,17 @@
     "popular": false,
     "image": "images/1785262210768-قلیان.jfif",
     "emoji": "☕"
+  },
+  {
+    "id": 1785262259162,
+    "name": "آلو یخ",
+    "price": "-",
+    "category": "قلیان",
+    "desc": "",
+    "rating": null,
+    "discount": 0,
+    "popular": false,
+    "image": "images/1785262256795-قلیان.jfif",
+    "emoji": "☕"
   }
 ]
