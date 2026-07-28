@@ -970,5 +970,17 @@
     "popular": false,
     "image": "images/1785260615904-نان-سیر.jfif",
     "emoji": "☕"
+  },
+  {
+    "id": 1785262135872,
+    "name": "دوسیب آلبالو",
+    "price": "-",
+    "category": "قلیان",
+    "desc": "",
+    "rating": null,
+    "discount": 0,
+    "popular": false,
+    "image": "images/1785262132521-قلیان.jfif",
+    "emoji": "☕"
   }
 ]
