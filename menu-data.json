@@ -721,26 +721,26 @@
   },
   {
     "id": 1785009231893,
-    "name": "قارچ و گوشت تک نفره",
-    "price": "-",
-    "category": "پیتزا",
-    "desc": "",
-    "rating": null,
-    "discount": 0,
-    "popular": false,
-    "image": "images/1785258941816-قارچ-و-گوشت.jfif",
-    "emoji": "☕"
-  },
-  {
-    "id": 1785009264944,
-    "name": "مارگاریتا تک نفره",
-    "price": "250000",
+    "name": "بیف دونفره",
+    "price": "1000000",
     "category": "پیتزا",
     "desc": "",
     "rating": null,
     "discount": 0,
     "popular": false,
     "image": null,
+    "emoji": "☕"
+  },
+  {
+    "id": 1785009264944,
+    "name": "قارچ و گوشت دونفره",
+    "price": "-",
+    "category": "پیتزا",
+    "desc": "",
+    "rating": null,
+    "discount": 0,
+    "popular": false,
+    "image": "images/1785258987684-قارچ-و-گوشت.jfif",
     "emoji": "☕"
   },
   {
