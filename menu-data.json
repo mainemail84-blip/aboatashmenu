@@ -716,18 +716,6 @@
     "rating": null,
     "discount": 0,
     "popular": false,
-    "image": "images/1785259796677-چیکن-آلفردو.jfif",
-    "emoji": "☕"
-  },
-  {
-    "id": 1785009231893,
-    "name": "بیف دونفره",
-    "price": "1000000",
-    "category": "پیتزا",
-    "desc": "",
-    "rating": null,
-    "discount": 0,
-    "popular": false,
     "image": null,
     "emoji": "☕"
   },
