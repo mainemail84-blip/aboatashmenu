@@ -1018,5 +1018,17 @@
     "popular": false,
     "image": "images/1785262303854-قلیان.jfif",
     "emoji": "☕"
+  },
+  {
+    "id": 1785262338235,
+    "name": "آدامس دارچین",
+    "price": "-",
+    "category": "قلیان",
+    "desc": "",
+    "rating": null,
+    "discount": 0,
+    "popular": false,
+    "image": "images/1785262336511-قلیان.jfif",
+    "emoji": "☕"
   }
 ]
