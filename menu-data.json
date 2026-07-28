@@ -946,5 +946,17 @@
     "popular": false,
     "image": "images/1785260349951-مارگاریتا.jfif",
     "emoji": "☕"
+  },
+  {
+    "id": 1785260533278,
+    "name": "مارگاریتا دونفره",
+    "price": "380000",
+    "category": "پیتزا",
+    "desc": "",
+    "rating": null,
+    "discount": 0,
+    "popular": false,
+    "image": "images/1785260530937-مارگاریتا.jfif",
+    "emoji": "☕"
   }
 ]
