@@ -934,5 +934,17 @@
     "popular": false,
     "image": "images/1785260149430-بیف.jfif",
     "emoji": "☕"
+  },
+  {
+    "id": 1785260293670,
+    "name": "مارگاریتا تک نفره",
+    "price": "250000",
+    "category": "پیتزا",
+    "desc": "",
+    "rating": null,
+    "discount": 0,
+    "popular": false,
+    "image": "images/1785260290832-مارگاریتا.jfif",
+    "emoji": "☕"
   }
 ]
