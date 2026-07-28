@@ -1030,5 +1030,17 @@
     "popular": false,
     "image": "images/1785262336511-قلیان.jfif",
     "emoji": "☕"
+  },
+  {
+    "id": 1785262382258,
+    "name": "پرتقال لیمو",
+    "price": "-",
+    "category": "قلیان",
+    "desc": "",
+    "rating": null,
+    "discount": 0,
+    "popular": false,
+    "image": "images/1785262379369-قلیان.jfif",
+    "emoji": "☕"
   }
 ]
