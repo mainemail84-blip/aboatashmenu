@@ -1078,5 +1078,17 @@
     "popular": false,
     "image": "images/1785263036071-قلیان.jfif",
     "emoji": "☕"
+  },
+  {
+    "id": 1785328099147,
+    "name": "موهیتو",
+    "price": "-",
+    "category": "قلیان",
+    "desc": "",
+    "rating": null,
+    "discount": 0,
+    "popular": false,
+    "image": null,
+    "emoji": "☕"
   }
 ]
