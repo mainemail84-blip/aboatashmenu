@@ -1114,5 +1114,17 @@
     "popular": false,
     "image": "images/1785600771659-آب-معدنی.jfif",
     "emoji": "☕"
+  },
+  {
+    "id": 1785600938508,
+    "name": "نوشابه های قوطی",
+    "price": "85000",
+    "category": "نوشیدنی",
+    "desc": "",
+    "rating": null,
+    "discount": 0,
+    "popular": false,
+    "image": "images/1785600936638-قوطی.jfif",
+    "emoji": "☕"
   }
 ]
