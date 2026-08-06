@@ -2,7 +2,7 @@
   {
     "id": 1783183407884,
     "name": "اسپرسو تک",
-    "price": "60000",
+    "price": "70000",
     "category": "قهوه و نوشیدنی گرم",
     "desc": "",
     "rating": null,
@@ -1137,18 +1137,6 @@
     "discount": 0,
     "popular": false,
     "image": "images/1785601185828-قوطی.jfif",
-    "emoji": "☕"
-  },
-  {
-    "id": 1786037783439,
-    "name": "کیک",
-    "price": "100000",
-    "category": "بستنی و شیک",
-    "desc": "",
-    "rating": null,
-    "discount": 0,
-    "popular": false,
-    "image": null,
     "emoji": "☕"
   }
 ]
