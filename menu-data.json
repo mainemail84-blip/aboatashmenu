@@ -2,7 +2,7 @@
   {
     "id": 1783183407884,
     "name": "اسپرسو تک",
-    "price": "75000",
+    "price": "60000",
     "category": "قهوه و نوشیدنی گرم",
     "desc": "",
     "rating": null,
@@ -55,7 +55,7 @@
     "desc": "",
     "rating": null,
     "discount": 0,
-    "popular": false,
+    "popular": true,
     "image": "images/1783774342755-coffeduble.jpeg",
     "emoji": "☕"
   },
